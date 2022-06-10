@@ -12,8 +12,8 @@ public class P239_CustomerTest {
 
 		System.out.println(customerLee.showCustomerInfo());
 
-//		P236_VIPCustomer customerKim = new P236_VIPCustomer();
-		P234_Customer customerKim = new P236_VIPCustomer();
+		P236_VIPCustomer customerKim = new P236_VIPCustomer();
+//		P234_Customer customerKim = new P236_VIPCustomer();
 		// [상위클래스 변수명 = new 하위클래스]와 같은 형태로도 선언할수있다.
 		// 이 경우 상위클래스의 멤버변수와 메소드만 호출 가능하다.
 		// 오버라이딩한 경우 오버라이딩된 변수,메소드를 호출한다.
@@ -23,6 +23,7 @@ public class P239_CustomerTest {
 		customerKim.bonusPoint = 10000;
 
 		System.out.println(customerKim.showCustomerInfo());
+		System.out.println(customerKim.showVIPInfo());
 
 	}
 

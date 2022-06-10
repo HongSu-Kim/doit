@@ -3,7 +3,7 @@ package com.day9;
 public class P234_Customer {
 	private int customerID;
 	private String customerName;
-	private String customerGrade;
+	protected String customerGrade;
 	int bonusPoint;
 	double bonusRatio;
 

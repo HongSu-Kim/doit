@@ -1,26 +1,25 @@
 package com.day9;
 
 public class P236_VIPCustomer extends P234_Customer { // 클래스 상속
-	// 하위클래스 extends 상위 클래스
+	// 하위 클래스 extends 상위 클래스
 //	private int customerID; // 중복
 //	private String customerName;
-//	private String customerGrade;
+//	protected String customerGrade;
 //	int bonusPoint;
 //	double bonusRatio;
-
 	private int agentID; // VIP 기능 구현에 필요
 	double saleRatio;
 
 	public P236_VIPCustomer() { // 디폴트 생성자
 		// super(); // 상위 클래스(P234_Customer)를 자동으로 호출
-		setCustomerGrade("VIP");
+		customerGrade = "VIP";
 		bonusRatio = 0.05;
 		saleRatio = 0.1;
 	}
 
 	public P236_VIPCustomer(int customerID, String customerName, int agentID) {
 		super(customerID, customerName);
-		setCustomerGrade("VIP");
+		customerGrade = "VIP";
 		bonusRatio = 0.05;
 		saleRatio = 0.1;
 		this.agentID = agentID;
@@ -37,10 +36,10 @@ public class P236_VIPCustomer extends P234_Customer { // 클래스 상속
 		return agentID;
 	}
 
-	// customerName은 private이기 때문에 set()메소드를 호출한다.
-	// bonusPoint는 default이기 때문에 사용가능
+	// customerName은 private이기 때문에 get()메소드로 호출한다.
+	// customerGrade는 protected이기 때문에 사용가능
 	public String showCustomerInfo() {
-		return getCustomerName() + "님의 등급은 " + getCustomerGrade() + "이며, 보너스 포인트는 " + bonusPoint + "입니다.";
+		return getCustomerName() + "님의 등급은 " + customerGrade + "이며, 보너스 포인트는 " + bonusPoint + "입니다.";
 	}
 
 	public String showVIPInfo() {
