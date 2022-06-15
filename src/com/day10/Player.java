@@ -5,7 +5,7 @@ public class Player {
 	private PlayerLevel level;
 
 	public Player() { // 생성자 
-		level = new BeginnerLevel(); // Player 생성시 beginnerLevel이 된다.
+		level = new BeginnerLevel(); // upcasting // Player 생성시 beginnerLevel이 된다.
 		level.swhoLevelMessage(); // 현재 레벨을 출력함
 	}
 	
