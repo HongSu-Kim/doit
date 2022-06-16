@@ -7,7 +7,7 @@ class SortImpl implements P346_Sort {
 
 	public void print() {
 		System.out.println(sb);
-		sb.;
+		sb.delete(0, sb.length());
 	}
 
 	@Override
@@ -20,14 +20,6 @@ class SortImpl implements P346_Sort {
 	}
 
 	@Override
-	public void ascendning(int[] arr) {
-	}
-
-	@Override
-	public void descending(int[] arr) {
-	}
-
-	@Override
 	public void description() {
 		sb.append("정렬순서를 선택하세요\n");
 		sb.append("A : ascendning\n");
@@ -36,10 +28,18 @@ class SortImpl implements P346_Sort {
 	}
 
 	@Override
+	public void ascendning(int[] arr) {
+	}
+
+	@Override
+	public void descending(int[] arr) {
+	}
+
+	@Override
 	public void err() {
 		sb.append("지원되지 않는 기능입니다.");
 		print();
-		return;
+		System.exit(0);
 	}
 
 }
@@ -53,16 +53,16 @@ class QuickSort extends SortImpl {
 		sb.append("숫자를 정렬하는 알고리즘 " + sortType + "입니다\n");
 		super.description();
 	}
-	
+
 	@Override
 	public void ascendning(int[] arr) {
-		sb.append(sortType + "ascendning");
+		sb.append(sortType + " ascendning");
 		print();
 	}
 
 	@Override
 	public void descending(int[] arr) {
-		sb.append(sortType + "descending");
+		sb.append(sortType + " descending");
 		print();
 	}
 
@@ -80,13 +80,13 @@ class HeapSort extends SortImpl {
 
 	@Override
 	public void ascendning(int[] arr) {
-		sb.append(sortType + "ascendning");
+		sb.append(sortType + " ascendning");
 		print();
 	}
 
 	@Override
 	public void descending(int[] arr) {
-		sb.append(sortType + "descending");
+		sb.append(sortType + " descending");
 		print();
 	}
 
@@ -104,13 +104,13 @@ class BubbleSort extends SortImpl {
 
 	@Override
 	public void ascendning(int[] arr) {
-		sb.append(sortType + "ascendning");
+		sb.append(sortType + " ascendning");
 		print();
 	}
 
 	@Override
 	public void descending(int[] arr) {
-		sb.append(sortType + "descending");
+		sb.append(sortType + " descending");
 		print();
 	}
 

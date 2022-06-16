@@ -8,10 +8,10 @@ public class P346_SortTest {
 
 		int[] arr = new int[10];
 		int ch;
-		
+
 		P346_Sort sort = new SortImpl(); // P346_Sort자료형의 변수sort를 만들어서 SortImpl자료형의 값을 생성해서 대입(upcast)
 
-		sort.write(); // 오버라이딩된 메소드print() 실행
+		sort.write(); // 오버라이딩된 메소드write() 실행
 		ch = System.in.read();
 		System.in.skip(2);
 		if (ch == 'B' || ch == 'b')
