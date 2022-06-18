@@ -12,10 +12,10 @@ public interface MemberArraryList {
 
 	public void removeMember() throws IOException; // 탈퇴
 
-	public void printMemberImfo() throws IOException; // 회원정보출력
+	public void printMemberImfo(); // 회원정보출력
 
 	public void search() throws IOException; // 검색
 
-	public void sort(); // 정렬
+	public void sort() throws IOException; // 정렬
 
 }

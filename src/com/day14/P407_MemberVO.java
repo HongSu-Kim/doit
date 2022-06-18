@@ -25,7 +25,8 @@ public class P407_MemberVO {
 	
 	@Override
 	public String toString() {
-		return memberName + " 회원님의 아이디는 " + memberId + "입니다.";
+		String str = String.format("아이디 :%3d, 이름 :%6s", memberId, memberName);
+		return str;
 	}
 
 }

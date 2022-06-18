@@ -1,12 +1,12 @@
-package com.day14;
+package com.day15;
 
 import java.io.IOException;
 
-public class P410_ArrayListMain {
+public class BMIMain {
 
 	public static void main(String[] args) throws IOException {
 
-		MemberArrayListImpl ob = new MemberArrayListImpl();
+		BMIImpl ob = new BMIImpl();
 
 		while (true) {
 			ob.printHome();
